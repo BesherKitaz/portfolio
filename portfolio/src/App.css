@@ -1,0 +1,46 @@
+.ms-10 {
+  margin-left: 5.5rem;
+}
+
+.ms-15 {
+  margin-left: 10rem;
+}
+
+.ml-10 {
+  margin-left: 5.5rem
+}
+
+.m-10 {
+  margin-top: 5.5rem;
+}
+
+.appContainer {
+  height: 60vh;
+  width: 28vw;
+  margin-top: 15vh;
+  margin-left: 22vw;
+}
+
+.greetContainer {
+  letter-spacing: 10px;
+  font-weight: 600;
+  font-family: PP Neue Machina, serif;
+  color: darkblue;
+}
+
+
+.nameContainer {
+  font-size: 50px;
+}
+
+.nameContainer * {
+  margin-top: -20px;
+  padding-top: -20px;
+  
+  margin-bottom: -20px;
+  padding-bottom: -20px;
+}
+
+.iAmContainer {
+  font-size: 25px;
+}
