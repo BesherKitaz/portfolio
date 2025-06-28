@@ -1,24 +1,22 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { AnimatePresence, motion } from 'framer-motion'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
+
+import SecondPage from './components/SecondPage'
+import Home from './components/Home'
 
 function App() {
 
   return (
     <>
-      <div>
-        <div className='appContainer'>
-          <div className='greetContainer'>
-            <p > Hello </p>
-            <p className='iAmContainer'> I am </p>
-            <div className='nameContainer'>
-              <p className='ms-5'> Besher</p>
-              <p className='ms-15'> Kitaz!</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/second-page" element={<SecondPage/>} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
+     
     </>
   )
 }
