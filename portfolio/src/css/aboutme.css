@@ -1,0 +1,13 @@
+.aboutme {
+    font-weight: 500;
+    font-size: larger;
+}
+
+.aboutme h1 {
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.aboutme p {
+    color: var(--primary-color);
+}

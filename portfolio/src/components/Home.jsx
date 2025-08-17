@@ -7,25 +7,21 @@ export default () => {
     return (
         <>
             <motion.div
-            key="home"
-            initial={{ x: '100%', opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: '100%', opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="appContainer"
+                key="home"
+                initial={{ x: '100%', opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: '100%', opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="d-flex justify-content-center align-items-center w-100 h-100"
             >
-                <div className="appContainer" >
-                    <div className="row w-100 d-flex align-items-center justify-content-center">
-                    <div className="col-6">
-                        <div className='nameContainer'>
-                        <NameArea/>
+                <div className="backgroundFrame">
+                    <div className="container row d-flex flex-row align-items-center justify-content-center">
+                        <div className="col-lg-6 col-md-12 col-sm-12 mt-5">
+                            <NameArea/>
                         </div>
-                    </div>
-                    <div className='col-6'>
-                        <div className='mx-auto'>
-                        <MainMenu/>
+                        <div className="col-lg-6 col-md-12 col-sm-12 mt-5">
+                            <MainMenu/>
                         </div>
-                    </div>
                     </div>
                 </div>
             </motion.div>

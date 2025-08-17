@@ -3,8 +3,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 
-import SecondPage from './components/SecondPage'
+import AboutMe from './components/AboutMe.jsx'
 import Home from './components/Home'
+import Projects from './components/projects.jsx'
 
 function App() {
 
@@ -12,8 +13,9 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/second-page" element={<SecondPage/>} />
+          <Route path="/aboutme" element={<AboutMe/>} />
           <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </Router>
      

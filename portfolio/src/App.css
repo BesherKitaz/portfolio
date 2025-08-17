@@ -1,47 +1,43 @@
 
 
-html, body, .container-fluid, .row {
+html, body {
     height: 100%; /* Make sure these elements take full height */
     margin: 0;
     padding: 0;
-    background-color: rgb(42, 42, 42);
-    color: azure;
+    color: var(--primary-color);
 }
 
 
-/* Chat GPT Generated */
-.appContainer {
-  /* make widths respond but cap at 1200px */
-  width: 100vw;
-  
-  /* center on larger screens */
-  margin: 0 auto;
-  
-  /* internal padding, adjusts at breakpoints */
-  padding: 1rem;
-  box-sizing: border-box;
-
-  /* flex layout so children align and wrap */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;  /* distributes items evenly */
-  align-items: flex-start;          /* align items at top */
-
-  /* consistent gap between items */
-  gap: 1rem;
+.container {
+  max-width: 1200px; 
+  margin: 0 auto;   
+  padding: 0;
 }
 
-/* larger‑screen tweaks */
-@media (min-width: 768px) {
-  .appContainer {
-    padding: 2rem;
-    gap: 1.5rem;
+.backgroundFrame {
+  width: 90vw;
+  height: 90vh;
+  border: 2px solid var(--secondary-color);
+  border-radius: 12px;
+  overflow: hidden;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid rgba(255, 255, 255, 0.58);
+}
+
+@media (max-width: 768px) {
+  .backgroundFrame {
+    width: 95vw;
+    height: 95vh;
+    overflow: scroll;
   }
-}
 
-@media (min-width: 1024px) {
-  .appContainer {
-    padding: 3rem;
-    gap: 2rem;
-  }
+}
+.backgroundFrame .container {
+  height: 100%;
 }

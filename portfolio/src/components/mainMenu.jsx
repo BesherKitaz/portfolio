@@ -2,25 +2,29 @@ import React from "react";
 import '../css/mainMenu.css'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
-export default function() {
+function MainMenu() {
     return (
         <>
             <div className="mainMenu">
+                <h1 className="mb-4 color-primary"> Sections </h1>
                 <ul>
                     <li>
-                        <Link to='/second-page'> Personal Info </Link>    
+                        <Link to='/aboutme'> About </Link>    
                     </li>
                     <li>
-                        Projects
+                        <Link to='/projects'> Projects </Link>
                     </li>
                     <li>
-                        Skills
+                        <Link to='/skills'> Skills </Link>
                     </li>
                     <li>
-                        Qualifications
+                        <Link to='/qualifications'> Qualifications </Link>
                     </li>
                 </ul>
             </div>
         </>
     )
 }
+
+export default MainMenu;
+
