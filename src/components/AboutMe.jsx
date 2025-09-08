@@ -14,19 +14,22 @@ With skills spanning Java, web development, and collaborative project work, I’
     <>
         <motion.div
                 key="home"
-                initial={{ x: '-100%', opacity: 0 }}
+                initial={{ x: '0%', opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                exit={{ x: '100%', opacity: 10 }}
+                exit={{ x: '0%', opacity: 0 }}
                 transition={{ duration: 0.5 }}
-                className="appContainer"
                 >
-                <div className="container aboutme mt-5"> 
-                    <h1> About Me </h1>
-                    <p> {text} </p>
-                    <Link to='/'> Return </Link>
+                <div className="aboutme">
+                    <div className="container mt-5"> 
+                        <div>
+                            <h1> About Me </h1>
+                            <p className="glassyFrame"> {text} </p>
+                            <div className="mb-4"><Link to='/'> Return </Link></div>
+                        </div>
+                    </div>
                 </div>
         </motion.div>
-    </>
+    </> 
     )
-
 }
+

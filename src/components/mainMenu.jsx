@@ -9,16 +9,19 @@ function MainMenu() {
                 <h1 className="mb-4 color-primary"> Sections </h1>
                 <ul>
                     <li>
-                        <Link to='/aboutme'> About </Link>    
+                        <Link to='/aboutme'> About me </Link>    
+                    </li>
+                    <li>
+                        <Link to='/education'> Education </Link>
+                    </li>
+                    <li>
+                        <Link to='/experience'> Experience </Link>
                     </li>
                     <li>
                         <Link to='/projects'> Projects </Link>
                     </li>
                     <li>
                         <Link to='/skills'> Skills </Link>
-                    </li>
-                    <li>
-                        <Link to='/qualifications'> Qualifications </Link>
                     </li>
                 </ul>
             </div>

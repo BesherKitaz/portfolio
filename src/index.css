@@ -13,8 +13,8 @@
   }
 
 #root {
-  min-height: 100vh;
-  min-width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 a {
   font-weight: 500;
@@ -25,20 +25,7 @@ a:hover {
   color: #69F0AE;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  color: var(--primary-color);
-}
 
-body {
-  display: flex;
-  position: relative;
-  min-height: 100vh;
-  min-width: 100vw;
-}
 
 body::before {
   content: "";
@@ -81,7 +68,6 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
   }
   a:hover {
     color: #747bff;
@@ -94,22 +80,6 @@ button:focus-visible {
 
 
 /* Costum universal clasess */
-
-.ms-10 {
-  margin-left: 5.5rem;
-}
-
-.ms-15 {
-  margin-left: 10rem;
-}
-
-.ml-10 {
-  margin-left: 5.5rem
-}
-
-.m-10 {
-  margin-top: 5.5rem;
-}
 
 .color-primary {
   color: var(--primary-color);

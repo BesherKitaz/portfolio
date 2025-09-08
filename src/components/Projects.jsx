@@ -5,16 +5,16 @@ import { motion } from 'framer-motion'
 import '../css/projects.css';
 import ratFightPreview from '../assets/ratfight-preview.png'
 
-const Project = ({ title, description, gitHubLink, webLink, image }) => {
+const Project = ({ title, description, gitHubLink, webLink="", webLinkAlt="", image="", imageAltText="" }) => {
     return (
         <>
             <div className="project-card">
-                <img src={image} alt="A preview of the website" width="100%" height="auto"/>
+                {image ? <img src={image}  width="100%" height="220px"/> : <div  className="imgAltText"> <h3> {imageAltText} </h3> </div>}
                 <div>
                     <h3>{title}</h3>
                     <p>{description}</p>
                     <a href={gitHubLink} target="_blank" rel="noopener noreferrer" className="d-block">GitHub Repository</a>
-                    <a href={webLink} target="_blank" rel="noopener noreferrer" className="d-block">Live Website</a>
+                    {webLink ? <a href={webLink} target="_blank" rel="noopener noreferrer" className="d-block">Live Website</a> : <p> {webLinkAlt} </p>}
                 </div>
             </div>
         </>
@@ -25,13 +25,14 @@ const Projects = () => {
     return (
         <motion.div
             key="home"
-            initial={{ x: '-100%', opacity: 0 }}
+            initial={{ x: '0%', opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            exit={{ x: '100%', opacity: 10 }}
+            exit={{ x: '0%', opacity: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <div className="projects">
+            <div className="projects mt-5">
                 <div className="container">
+                    <h1> My Projects </h1>
                     <div className="row g-5">
                         <div className="col-lg-6 col-12">
                             <Project 
@@ -43,7 +44,12 @@ const Projects = () => {
                             />
                         </div>
                         <div className="col-lg-6 col-12">
-                            <Project title="Project 2" description="Description for Project 2" />
+                            <Project          
+                                title="CELTS Department, Berea College"
+                                description="Center for Excellence in Learning, Teaching "
+                                gitHubLink="https://github.com/BCStudentSoftwareDevTeam/celts"
+                                webLinkAlt="Live Website is only availabe to Berea College members"
+                                imageAltText="A preview is not available due to privacy concerns." />
                         </div>
                     </div>
                     <div className="row g-5 py-5">
@@ -54,7 +60,7 @@ const Projects = () => {
                             <Project title="Project 4" description="Description for Project 4" />
                         </div>
                     </div>
-                    <div><Link to='/'> Return </Link></div>
+                    <div className="mb-5"><Link to='/'> Return </Link></div>
                 </div>
             </div>
         </motion.div>
