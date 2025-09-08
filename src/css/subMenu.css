@@ -1,0 +1,24 @@
+.subMenu ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.subMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.subMenu ul {
+    position: absolute;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.subMenu ul li a {
+    font-weight: 700;
+}
+

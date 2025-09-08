@@ -1,0 +1,13 @@
+.mainMenu ul li {
+    list-style:none;
+    font-size: 30px;
+    transition: transform 1s ease;
+    text-shadow: 0 0 3px #00E5FF;
+    z-index: 10;
+    position: relative;
+}
+
+.mainMenu ul li:hover {
+    transform: translateX(2%);
+}
+

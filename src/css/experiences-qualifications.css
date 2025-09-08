@@ -1,0 +1,28 @@
+.experiences-qualifications .container {
+    align-items: flex-start;
+}
+
+
+.experiences-qualifications .container>ul>li {
+    margin-bottom: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.exp-title-and-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bullet-points *  {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    list-style: none;
+}
+
+.bullet-points ul{
+    border-left: 2px solid #eee;
+    padding-left: 8px;   
+    margin-left: 8px;
+}
