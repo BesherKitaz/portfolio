@@ -40,3 +40,32 @@
   font-size: 15px;
   letter-spacing: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .mainGreetContainer {
+    font-size: 40px;
+    letter-spacing: 8px;
+  }
+
+  .greetContainer p:first-child {
+    right: 10vw;
+  }
+
+  .greetContainer p:nth-child(2) {
+    font-size: 20px;
+    right: 5vw;
+  }
+
+  .nameContainer p:first-child {
+    left: 0vw;
+  }
+
+  .nameContainer p:nth-child(2) {
+    left: 10vw;
+  }
+
+  .softwareEngineerContainer {
+    font-size: 10px;
+    letter-spacing: 5px;
+  }
+}

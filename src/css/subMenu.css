@@ -23,3 +23,11 @@
     font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+    .subMenu ul li a {
+        position: relative;
+        top: 5vw;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
