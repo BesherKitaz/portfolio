@@ -4,9 +4,8 @@ const SubMenu = () => {
     return (
         <div className="subMenu">
             <ul>
-                <li><Link to="/">Contact</Link></li>
-                <li> <a href='https://github.com/BesherKitazBerea/portfolio' target="_blank" rel="noopener noreferrer"> GitHub Repository </a> </li>
-                <li><Link to="/contact">Download Resume</Link></li>
+                <li> <a href='https://github.com/BesherKitazBerea/portfolio' target="_blank" rel="noopener noreferrer"> Site's Repository </a> </li>
+                <li><Link to="">Download Resume</Link></li>
             </ul>
         </div>
     );

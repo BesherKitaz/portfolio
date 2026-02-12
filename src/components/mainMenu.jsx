@@ -5,23 +5,19 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 function MainMenu() {
     return (
         <>
-            <div className="mainMenu">
-                <h1 className="mb-4 color-primary"> Sections </h1>
+            <div className="mainMenu mt-5">
                 <ul>
-                    <li>
+                    <li className="mb-2">
                         <Link to='/aboutme'> About me </Link>    
                     </li>
-                    <li>
-                        <Link to='/education'> Education </Link>
-                    </li>
-                    <li>
-                        <Link to='/experience'> Experience </Link>
-                    </li>
-                    <li>
+                    <li className="mb-2">
                         <Link to='/projects'> Projects </Link>
                     </li>
-                    <li>
+                    <li className="mb-2">
                         <Link to='/skills'> Skills </Link>
+                    </li>
+                    <li className="mb-2">
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
             </div>

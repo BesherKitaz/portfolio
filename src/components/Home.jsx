@@ -16,16 +16,10 @@ export default () => {
             className="d-flex justify-content-center align-items-center w-100 h-100"
         >
             <div className="backgroundFrame">
-                <div className="container row d-flex flex-row align-items-center justify-content-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12 mt-5">
-                        <NameArea/>
-                    </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12 mt-5">
-                        <MainMenu/>
-                    </div>
-                </div>
-                <div>
-                    <SubMenu className="row"/>
+                <div className="container row d-flex flex-rcolumn align-items-center justify-content-center" >
+                    <div><NameArea/></div>
+                    <div><MainMenu/></div>
+                    <div><SubMenu/></div>
                 </div>
             </div>
         </motion.div>

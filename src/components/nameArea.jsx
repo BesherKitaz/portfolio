@@ -2,9 +2,10 @@ import React from "react";
 import '../css/nameArea.css'
 
 export default function() {
-    return (
+    return (                  
+
     <>    
-        <div className='mainGreetContainer'>
+        <div className='mainGreetContainer text-center mt-5'>
             <div className='greetContainer'>
                 <p> Hello </p>
                 <p> I am </p>
@@ -12,6 +13,9 @@ export default function() {
             <div className='nameContainer'>
                 <p> Besher</p>
                 <p> Kitaz!</p>
+            </div>
+            <div className="softwareEngineerContainer">
+                    <h1 className="text-center letter-spacing:10"> Software Developer</h1>
             </div>
         </div>
     </>

@@ -11,3 +11,16 @@
     transform: translateX(2%);
 }
 
+.mainMenu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .mainMenu ul {
+        flex-direction: column; ;
+    }
+}
